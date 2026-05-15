@@ -644,6 +644,7 @@ def copy_to_clipboard(text: str) -> bool:
 
 def load_env_files(project_dir: Path) -> None:
     candidates = [
+        DEFAULT_DATA_DIR / ".env",
         Path.home() / "Documents" / "Programming" / ".env",
         project_dir.resolve() / ".env",
     ]

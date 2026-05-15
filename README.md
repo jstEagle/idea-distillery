@@ -19,6 +19,16 @@ Requirements:
 - `OPENAI_API_KEY`
 - Optional: `ffmpeg`, if you want to use the ffmpeg recording backend directly
 
+One-command local setup after cloning:
+
+```bash
+./scripts/install.sh
+```
+
+The installer creates `.venv`, installs the CLI in editable mode, links `idea-distillery` and `ida-distillery` into `~/.local/bin`, creates `~/.idea/distillery`, optionally saves `OPENAI_API_KEY` to `~/.idea/distillery/.env`, and runs the test suite.
+
+Manual install:
+
 ```bash
 python3 -m pip install --user pipx
 python3 -m pipx ensurepath
