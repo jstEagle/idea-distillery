@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "idea-distillery"
+version = "0.1.0"
+description = "Record project idea calls, transcribe them, and distill them into LLM-ready vision documents."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.24",
+  "openai>=1.0.0",
+  "sounddevice>=0.5.0",
+]
+
+[project.scripts]
+idea-distillery = "idea_distillery.cli:main"
+ida-distillery = "idea_distillery.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
