@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "title": "Idea Distillery",
+  "description": "A command-line recorder for project calls that captures audio, transcribes the conversation, and writes a distilled Markdown plan.",
+  "tags": [
+    "Python",
+    "CLI",
+    "Audio",
+    "OpenAI",
+    "Markdown"
+  ],
+  "featured": false,
+  "order": 110,
+  "links": {
+    "repo": "https://github.com/jstEagle/idea-distillery"
+  },
+  "images": []
+}
